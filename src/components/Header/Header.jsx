@@ -52,7 +52,7 @@ export const Header = () => {
             </li>
           </ol>
         </nav>
-        <SMButton content={'Resume'} />
+        <SMButton href={'cv-maiky.pdf'} content={'Resume'} />
       </Container>
 
       <MobileMenu className='header-original' id='header-mobile'>
@@ -85,7 +85,7 @@ export const Header = () => {
               <a href='#'>Contact</a>
             </li>
             <li>
-              <SMButton content={'Resume'} />
+              <SMButton href={'cv-maiky.pdf'} content={'Resume'} />
             </li>
           </ul>
         </nav>
