@@ -31,8 +31,11 @@ export const Main = () => {
       header.classList.remove('header-active');
     }
 
-    if (currentTop < pageYoffset) {
+    if (pageYoffset == 0) {
+      headerMobile.classList.remove('header-active');
       headerMobile.classList.add('header-original');
+    } else if (currentTop < pageYoffset) {
+      headerMobile.classList.add('header-active');
     } else {
       headerMobile.classList.remove('header-original');
       headerMobile.classList.remove('header-active');

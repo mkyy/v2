@@ -85,7 +85,7 @@ export const MobileMenu = styled.header`
   display: none;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 15vh;
   transition: ease 0.5s;
   transform: translateY(-100%);
@@ -98,8 +98,8 @@ export const MobileMenu = styled.header`
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: rgba(10, 25, 47, 0.7);
     height: 15vh;
-    width: 90vw;
     margin: 0 auto;
+    width: 90%;
   }
 
   .nav-list {

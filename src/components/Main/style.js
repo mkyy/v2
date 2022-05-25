@@ -69,6 +69,12 @@ export const Container = styled.main`
       left: 180px;
       background-color: #233554;
     }
+
+    @media (max-width: 425px) {
+      &::after {
+        display: none;
+      }
+    }
   }
 
   .nav-about {
