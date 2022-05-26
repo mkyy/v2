@@ -1,12 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill='none' className='logo' width='410' height='404' viewBox='0 0 410 404'>
-        <polygon
-          className='poly'
-          fill='#0A192F'
-          stroke='#64FFDA'
-          stroke-width='1'
-          points='16,1 32,32 1,32'
-        />
-        <text className='text' fontSize={10} x={12} y={26} fill='#fff'>
-          M
-        </text>
+<svg width="80" height="80" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<polygon
+            className='poly'
+            fill='#0A192F'
+            stroke='#64FFDA'
+            strokeWidth='1'
+            points='16,1 32,32 1,32'
+          />
 </svg>
