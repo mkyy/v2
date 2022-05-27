@@ -48,8 +48,8 @@ export const GlobalStyle = createGlobalStyle`
     .email {
     
     position: fixed;
-    right: -2vw;
-    bottom: 20vh;
+    right: 0px;
+    bottom: 150px;
     transform: rotate(90deg);
     transition: 0.1s;
 
@@ -89,7 +89,7 @@ export const GlobalStyle = createGlobalStyle`
   .social-icons{
       position: fixed;
       left: 0;
-      bottom: -20vh;
+      bottom: -150px;
       display: flex;
       justify-content: column;
       ul {
