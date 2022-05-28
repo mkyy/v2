@@ -24,6 +24,21 @@ export const Header = () => {
     main.classList.toggle('blur');
   };
 
+  const handleItemClick = () => {
+    const main = document.getElementById('content');
+    const navLinks = document.querySelectorAll('.nav-list li');
+
+    navLinks.forEach((link, index) => {
+      link.style.animation
+        ? (link.style.animation = '')
+        : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`);
+    });
+
+    mobileMenuRef.current.classList.remove('active');
+    mobileNavList.current.classList.remove('active');
+    main.classList.remove('blur');
+  };
+
   return (
     <>
       <Container className='header-original' id='header'>
@@ -76,13 +91,19 @@ export const Header = () => {
           </div>
           <ul ref={mobileNavList} className='nav-list'>
             <li>
-              <a href='#'>About</a>
+              <a onClick={handleItemClick} href='#about'>
+                About
+              </a>
             </li>
             <li>
-              <a href='#'>Work</a>
+              <a onClick={handleItemClick} href='#work'>
+                Work
+              </a>
             </li>
             <li>
-              <a href='#'>Contact</a>
+              <a onClick={handleItemClick} href='#contact'>
+                Contact
+              </a>
             </li>
             <li>
               <SMButton href={'cv-maiky.pdf'} content={'Resume'} />

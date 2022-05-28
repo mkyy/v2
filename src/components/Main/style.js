@@ -32,6 +32,10 @@ export const Container = styled.main`
     @media (max-width: 1024px) {
       font-size: 8vw;
     }
+
+    @media (min-width: 1800px) {
+      font-size: 2.5vw;
+    }
   }
 
   #start .sub-title {
@@ -40,6 +44,10 @@ export const Container = styled.main`
 
     @media (max-width: 1024px) {
       font-size: 6vw;
+    }
+
+    @media (min-width: 1800px) {
+      font-size: 2vw;
     }
   }
 
@@ -103,7 +111,7 @@ export const Container = styled.main`
   }
 
   #about {
-    margin-left: 5vw;
+    padding-left: 5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;

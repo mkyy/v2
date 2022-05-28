@@ -33,6 +33,12 @@ export const GlobalStyle = createGlobalStyle`
 
     .sheet{
         min-height: 100vh;
+        max-width: 1440px;
+        margin: 0 auto;
+
+        @media (min-width:1800px) {
+            min-height: 80vh;
+        }
     }
 
     .header-active{
