@@ -99,8 +99,18 @@ export const Main = () => {
         </div>
 
         <div className='sheet' id='contact'>
-          <h2 className='nav-item nav-contact'>Contact</h2>
-          <p>Coming soon...</p>
+          <h2 className='nav-contact'>03. What's Next?</h2>
+          <h1>Get In Touch</h1>
+          <p>
+            I'm currently looking for my first opportunity of job as a front-end developer, which is
+            the area I've focusing on recently. However I'm already doing freelances at 99freelas
+            and Freelancer.com, so, if you're looking for a freelancer, don't hesitate to contact
+            me.{' '}
+          </p>
+
+          <Button href={'mailto:maikyrg9@gmail.com'} content={'Say Hello'} />
+
+          <h6> © Built by Maiky Roger</h6>
         </div>
       </Container>
 

@@ -102,12 +102,10 @@ export const Container = styled.main`
   }
 
   .nav-contact {
-    &::before {
-      content: '03.';
-    }
-    &::after {
-      left: 150px;
-    }
+    color: var(--light);
+    font-family: 'Fira Code', monospace;
+    font-size: 20px;
+    font-weight: 300;
   }
 
   #about {
@@ -226,6 +224,35 @@ export const Container = styled.main`
           }
         }
       }
+    }
+  }
+
+  #contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+
+    h1 {
+      color: var(--principal-text);
+      font-size: 50px;
+      margin-top: 0;
+    }
+
+    p {
+      width: 50%;
+      line-height: 25px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    h6 {
+      position: absolute;
+      bottom: 0;
+      font-weight: 500;
+      font-family: 'Fira Code', monospace;
+      font-size: 14px;
     }
   }
 
