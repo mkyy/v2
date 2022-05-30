@@ -1,16 +1,16 @@
 import styled from 'styled-components';
 
-export const Container = styled.header`
+export const Container = styled.div`
   height: 100px;
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding: 0px 40px;
-  position: fixed;
-  top: 0;
-  transition: ease 0.5s;
-  transform: translateY(-100%);
+  position: relative;
+
   background-color: rgba(10, 25, 47, 0.8);
   z-index: 5;
 
@@ -79,6 +79,17 @@ export const Container = styled.header`
   @media (max-width: 728px) {
     display: none;
   }
+`;
+
+export const Wrapper = styled.header`
+  width: 100vw;
+  height: 100px;
+  transition: ease 0.5s;
+  transform: translateY(-100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 `;
 
 export const MobileMenu = styled.header`

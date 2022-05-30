@@ -1,4 +1,4 @@
-import { Container, MobileMenu } from './style';
+import { Container, MobileMenu, Wrapper } from './style';
 import { SMButton } from '../SMButton/';
 import { useEffect, useRef } from 'react';
 
@@ -41,34 +41,36 @@ export const Header = () => {
 
   return (
     <>
-      <Container className='header-original' id='header'>
-        <svg className='logo' width='50' height='50' viewBox='0 0 35 35'>
-          <polygon
-            className='poly'
-            fill='#0A192F'
-            stroke='#64FFDA'
-            strokeWidth='1'
-            points='16,1 32,32 1,32'
-          />
-          <text className='text' fontSize={10} x={12} y={26} fill='#64FFDA'>
-            M
-          </text>
-        </svg>
-        <nav>
-          <ol>
-            <li>
-              <a href='#about'>About</a>
-            </li>
-            <li>
-              <a href='#work'>Work</a>
-            </li>
-            <li>
-              <a href='#contact'>Contact</a>
-            </li>
-          </ol>
-        </nav>
-        <SMButton href={'cv-maiky.pdf'} content={'Resume'} />
-      </Container>
+      <Wrapper className='header-original' id='header'>
+        <Container>
+          <svg className='logo' width='50' height='50' viewBox='0 0 35 35'>
+            <polygon
+              className='poly'
+              fill='#0A192F'
+              stroke='#64FFDA'
+              strokeWidth='1'
+              points='16,1 32,32 1,32'
+            />
+            <text className='text' fontSize={10} x={12} y={26} fill='#64FFDA'>
+              M
+            </text>
+          </svg>
+          <nav>
+            <ol>
+              <li>
+                <a href='#about'>About</a>
+              </li>
+              <li>
+                <a href='#work'>Work</a>
+              </li>
+              <li>
+                <a href='#contact'>Contact</a>
+              </li>
+            </ol>
+          </nav>
+          <SMButton href={'cv-maiky.pdf'} content={'Resume'} />
+        </Container>
+      </Wrapper>
 
       <MobileMenu className='header-original' id='header-mobile'>
         <nav>
