@@ -278,6 +278,19 @@ export const Container = styled.main`
       font-family: 'Fira Code', monospace;
       font-size: 14px;
     }
+
+    @media (max-width: 425px) {
+      height: 500px;
+      h1 {
+        font-size: 40px;
+        text-align: center;
+      }
+
+      p {
+        width: 100%;
+        text-align: left;
+      }
+    }
   }
 
   @media (max-width: 1024px) {
