@@ -66,9 +66,9 @@ export const Header = () => {
               <li>
                 <a href='#contact'>Contact</a>
               </li>
+              <SMButton href={'cv-maiky.pdf'} content={'Resume'} />
             </ol>
           </nav>
-          <SMButton href={'cv-maiky.pdf'} content={'Resume'} />
         </Container>
       </Wrapper>
 

@@ -1,10 +1,11 @@
 import { useEffect } from 'react';
 import { useRef, useState } from 'react';
 import { Button } from '../Button/';
-import { Container } from './style';
+import { Container, JobSampleComponent } from './style';
 import Git from '../../../public/icons/git.svg?component';
 import Insta from '../../../public/icons/insta.svg?component';
 import Linkedin from '../../../public/icons/linkedin.svg?component';
+import External from '../../../public/icons/external.svg?component';
 
 export const Main = () => {
   const mainRef = useRef();
@@ -95,10 +96,121 @@ export const Main = () => {
 
         <div className='sheet' id='work'>
           <h2 className='nav-item nav-work'>Some Things I've Built</h2>
-          <p>Coming soon...</p>
+          <JobSampleComponent>
+            <div className='image-container'>
+              <a href='https://renee-trajar.vercel.app/' target={'blank'}>
+                <img src='renee.png' alt='' />
+                <div className='bg-div'></div>
+              </a>
+            </div>
+            <div className='description-container'>
+              <p className='featured-project'>Featured Project</p>
+              <h1 className='project-title'>
+                <a href='https://renee-trajar.vercel.app/' target={'blank'}>
+                  {' '}
+                  Renee Trajar
+                </a>
+              </h1>
+              <p className='project-desc'>
+                A website intended for a Tailor company, tells a little about Renee's history,
+                explains about the service of the same, and shows offers for a limited time, in
+                addition to testimonials about customers who have been buying Renee's services for
+                over 10 years.
+              </p>
+              <ul className='techs-used'>
+                <li>React</li>
+                <li>Styled Components</li>
+                <li>Vercel</li>
+              </ul>
+              <div className='buttons'>
+                <a href='https://github.com/mkyy/renee-trajar' target={'blank'}>
+                  <Git />
+                </a>
+                <a href='https://renee-trajar.vercel.app/' target={'blank'}>
+                  <External />
+                </a>
+              </div>
+            </div>
+          </JobSampleComponent>
+
+          <JobSampleComponent>
+            <div className='image-container'>
+              <a href='https://freegames-db.vercel.app/' target={'blank'}>
+                <img src='freegdb.png' alt='' />
+                <div className='bg-div'></div>
+              </a>
+            </div>
+            <div className='description-container'>
+              <p className='featured-project'>Featured Project</p>
+              <h1 className='project-title'>
+                <a href='https://freegames-db.vercel.app/' target={'blank'}>
+                  {' '}
+                  FreeGames DB
+                </a>
+              </h1>
+              <p className='project-desc'>
+                A website intended for a Tailor company, tells a little about Renee's history,
+                explains about the service of the same, and shows offers for a limited time, in
+                addition to testimonials about customers who have been buying Renee's services for
+                over 10 years.
+              </p>
+              <ul className='techs-used'>
+                <li>React</li>
+                <li>Bootstrap</li>
+                <li>Styled Components</li>
+                <li>Vercel</li>
+              </ul>
+              <div className='buttons'>
+                <a href='https://github.com/mkyy/freegames-db' target={'blank'}>
+                  <Git />
+                </a>
+                <a href='https://freegames-db.vercel.app/' target={'blank'}>
+                  <External />
+                </a>
+              </div>
+            </div>
+          </JobSampleComponent>
+
+          <JobSampleComponent>
+            <div className='image-container'>
+              <a href='https://mkyy.github.io/netflix-clone/' target={'blank'}>
+                <img src='netflix.png' alt='' />
+                <div className='bg-div'></div>
+              </a>
+            </div>
+            <div className='description-container'>
+              <p className='featured-project'>Featured Project</p>
+              <h1 className='project-title'>
+                <a href='https://mkyy.github.io/netflix-clone/' target={'blank'}>
+                  Netflix Clone
+                </a>
+              </h1>
+              <p className='project-desc'>
+                A website intended for a Tailor company, tells a little about Renee's history,
+                explains about the service of the same, and shows offers for a limited time, in
+                addition to testimonials about customers who have been buying Renee's services for
+                over 10 years.
+              </p>
+              <ul className='techs-used'>
+                <li>React</li>
+                <li>jQuery</li>
+                <li>Styled Components</li>
+                <li>TMDB API</li>
+                <li>Vercel</li>
+              </ul>
+              <div className='buttons'>
+                <a href='https://github.com/mkyy/netflix-clone' target={'blank'}>
+                  <Git />
+                </a>
+                <a href='https://mkyy.github.io/netflix-clone/' target={'blank'}>
+                  <External />
+                </a>
+              </div>
+            </div>
+          </JobSampleComponent>
         </div>
 
-        <div className='sheet' id='contact'>
+        <div id='contact'>
           <h2 className='nav-contact'>03. What's Next?</h2>
           <h1>Get In Touch</h1>
           <p>

@@ -128,6 +128,7 @@ export const GlobalStyle = createGlobalStyle`
         width: 24px;
         stroke: var(--text);
         transition: ease 0.4s;
+        stroke: var(--principal-text);
 
         &:hover{
             stroke: var(--light);

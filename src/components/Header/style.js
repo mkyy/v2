@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 100px;
+  height: 70px;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 0px 40px;
   position: relative;
 
@@ -15,10 +15,6 @@ export const Container = styled.div`
   z-index: 5;
 
   .logo {
-    position: absolute;
-    top: 30px;
-    left: 50px;
-
     .poly:hover {
       cursor: pointer;
     }
@@ -83,7 +79,7 @@ export const Container = styled.div`
 
 export const Wrapper = styled.header`
   width: 100vw;
-  height: 100px;
+  height: 70px;
   transition: ease 0.5s;
   transform: translateY(-100%);
   position: fixed;
@@ -91,14 +87,20 @@ export const Wrapper = styled.header`
   left: 0;
   right: 0;
   z-index: 10;
+
+  @media (max-width: 425px) {
+    display: none;
+  }
 `;
 
 export const MobileMenu = styled.header`
   display: none;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100vw;
-  height: 15vh;
+  height: 70px;
   transition: ease 0.5s;
   transform: translateY(-100%);
   z-index: 5;
@@ -109,7 +111,7 @@ export const MobileMenu = styled.header`
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: rgba(10, 25, 47, 0.7);
-    height: 15vh;
+    height: 70px;
     margin: 0 auto;
     width: 90%;
   }
@@ -121,9 +123,10 @@ export const MobileMenu = styled.header`
     position: absolute;
     top: 0;
     right: 0;
+    padding: 0;
     width: 80vw;
     height: 100vh;
-    background: var(--bg);
+    background: #112240;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;

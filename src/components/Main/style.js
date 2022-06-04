@@ -89,15 +89,32 @@ export const Container = styled.main`
     &::before {
       content: '01.';
     }
+
+    @media (max-width: 425px) {
+      font-size: 20px;
+      text-align: center;
+    }
   }
 
   .nav-work {
+    margin-bottom: 100px;
+    width: 1000px;
+    margin-inline: auto;
     &::before {
       content: '02.';
     }
 
     &::after {
-      left: 350px;
+      left: 370px;
+      width: 250px;
+    }
+
+    @media (max-width: 425px) {
+      width: 100%;
+      margin-bottom: 40px;
+      font-size: 20px;
+      text-align: center;
+      margin-top: 100px;
     }
   }
 
@@ -227,12 +244,19 @@ export const Container = styled.main`
     }
   }
 
+  #work {
+    position: relative;
+  }
+
   #contact {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 80vh;
+    height: 80vh;
+    max-height: 700px;
+    max-width: 1440px;
+    margin: 0 auto;
 
     h1 {
       color: var(--principal-text);
@@ -258,5 +282,176 @@ export const Container = styled.main`
 
   @media (max-width: 1024px) {
     width: 90vw;
+  }
+`;
+
+export const JobSampleComponent = styled.div`
+  width: 1000px;
+  height: 370px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  margin-bottom: 100px;
+
+  .image-container {
+    width: 60%;
+    height: 300px;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      position: absolute;
+      filter: grayscale(100%);
+      z-index: -1;
+      transition: 0.3s ease;
+    }
+
+    .bg-div {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      background-color: #020c1b;
+      opacity: 0.7;
+      position: absolute;
+      z-index: 0;
+      transition: 0.3s ease-in-out;
+    }
+
+    &:hover {
+      img {
+        filter: grayscale(0);
+      }
+      .bg-div {
+        opacity: 0;
+      }
+      cursor: pointer;
+    }
+  }
+
+  .description-container {
+    max-width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+
+    .featured-project {
+      font-weight: 500;
+      font-family: 'Fira Code', monospace;
+      font-size: 14px;
+      color: var(--light);
+      margin: 5px;
+    }
+
+    .project-title {
+      margin: 0;
+
+      a {
+        color: var(--principal-text);
+        font-size: 24px;
+        text-decoration: none;
+        transition: 0.3s ease;
+
+        &:hover {
+          color: var(--light);
+        }
+      }
+    }
+    .project-desc {
+      background-color: #112240;
+      border-radius: 4px;
+      padding: 25px;
+      z-index: 2;
+    }
+    .techs-used {
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-end;
+      padding: 0;
+
+      li {
+        margin-left: 15px;
+        font-family: 'Fira Code', monospace;
+        font-size: 13px;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: flex-end;
+
+      svg {
+        margin-left: 20px;
+      }
+    }
+  }
+  @media (min-width: 426px) {
+    :nth-child(2n + 1) {
+      flex-direction: row-reverse;
+
+      .description-container {
+        left: 0;
+        text-align: left;
+
+        .techs-used {
+          justify-content: flex-start;
+          padding: 0;
+          li {
+            margin-left: 0;
+            margin-right: 15px;
+          }
+        }
+
+        .buttons {
+          justify-content: flex-start;
+          margin-left: 0;
+
+          svg {
+            margin-left: 0;
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 20px;
+
+    .image-container {
+      display: none;
+    }
+
+    .description-container {
+      text-align: center;
+      position: initial;
+      max-width: 100%;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+      background-color: #112240;
+      border-radius: 2px;
+      padding: 30px 10px;
+
+      .project-desc {
+        padding: 25px 10px;
+        text-align: justify;
+      }
+
+      .techs-used {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        line-height: 25px;
+        color: #ccd6f6;
+      }
+
+      .buttons {
+        justify-content: flex-start;
+        position: absolute;
+        bottom: 25px;
+      }
+    }
   }
 `;
