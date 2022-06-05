@@ -7,6 +7,7 @@ export const Header = () => {
   const mobileNavList = useRef();
 
   useEffect(() => {
+    window.addEventListener('load', () => handleAnimation());
     mobileMenuRef.current.addEventListener('click', () => handleClick());
   }, [mobileMenuRef]);
 
@@ -39,6 +40,14 @@ export const Header = () => {
     main.classList.remove('blur');
   };
 
+  const handleAnimation = () => {
+    const ElementsToAnimate = document.querySelectorAll('.animated');
+
+    ElementsToAnimate.forEach(element => {
+      element.classList.add('started');
+    });
+  };
+
   return (
     <>
       <Wrapper className='header-original' id='header'>
@@ -57,13 +66,13 @@ export const Header = () => {
           </svg>
           <nav>
             <ol>
-              <li>
+              <li className='animated'>
                 <a href='#about'>About</a>
               </li>
-              <li>
+              <li className='animated'>
                 <a href='#work'>Work</a>
               </li>
-              <li>
+              <li className='animated'>
                 <a href='#contact'>Contact</a>
               </li>
               <SMButton href={'cv-maiky.pdf'} content={'Resume'} />

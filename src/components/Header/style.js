@@ -37,6 +37,9 @@ export const Container = styled.div`
       margin-right: 50px;
       font-family: 'Fira Code', monospace;
       font-size: 0.8em;
+      transform: translateY(100%);
+      opacity: 0;
+      transition: 1s ease;
 
       &:nth-child(1) {
         ::before {
@@ -69,6 +72,11 @@ export const Container = styled.div`
           color: var(--light);
         }
       }
+    }
+
+    li.started {
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 

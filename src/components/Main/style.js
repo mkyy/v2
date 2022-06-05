@@ -8,6 +8,9 @@ export const Container = styled.main`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transform: translateY(10%);
+    opacity: 0;
+    transition: 1s ease;
 
     @media (max-width: 425px) {
       align-items: center;
@@ -55,6 +58,11 @@ export const Container = styled.main`
     font-family: 'Fira Code', monospace;
     color: var(--light);
     margin-top: 10vh;
+  }
+
+  #start.started {
+    transform: translateY(0);
+    opacity: 1;
   }
 
   .nav-item {

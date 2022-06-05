@@ -49,7 +49,7 @@ export const Main = () => {
   return (
     <>
       <Container id='content' ref={mainRef}>
-        <div className='sheet' id='start'>
+        <div className='sheet animated' id='start'>
           <div>
             <p className='sf'>Hi, my name is</p>
             <h1 className='title'>Maiky Roger.</h1>

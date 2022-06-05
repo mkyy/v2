@@ -140,4 +140,5 @@ export const GlobalStyle = createGlobalStyle`
     .blur{
         filter: blur(10px);
     }
+    
 `;
