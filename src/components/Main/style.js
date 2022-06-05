@@ -468,3 +468,93 @@ export const JobSampleComponent = styled.div`
     }
   }
 `;
+
+export const OtherProjects = styled.section`
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+
+  h2 {
+    text-align: center;
+    color: var(--principal-text);
+    margin-bottom: 50px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .item {
+    width: 320px;
+    height: 320px;
+    background-color: #112240;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: 0.5s ease-out;
+
+    &:hover {
+      transform: translateY(-10px);
+
+      h3 {
+        color: var(--light);
+      }
+    }
+  }
+
+  .icons-container {
+    display: flex;
+    justify-content: space-between;
+
+    .folder {
+      width: 50px;
+      color: var(--light);
+    }
+  }
+
+  .text-container {
+    h3 {
+      color: var(--principal-text);
+      transition: 0.5s ease-out;
+    }
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-start;
+      padding: 0;
+
+      li {
+        margin-right: 10px;
+        font-family: 'Fira Code', monospace;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .btn {
+    width: fit-content;
+    margin-inline: auto;
+    margin-top: 50px;
+  }
+
+  @media (max-width: 425px) {
+    h2 {
+      margin-top: 50px;
+      font-size: 20px;
+    }
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .item {
+      margin-bottom: 20px;
+    }
+  }
+`;

@@ -1,11 +1,12 @@
 import { useEffect } from 'react';
 import { useRef, useState } from 'react';
 import { Button } from '../Button/';
-import { Container, JobSampleComponent } from './style';
+import { Container, JobSampleComponent, OtherProjects } from './style';
 import Git from '../../../public/icons/git.svg?component';
 import Insta from '../../../public/icons/insta.svg?component';
 import Linkedin from '../../../public/icons/linkedin.svg?component';
 import External from '../../../public/icons/external.svg?component';
+import Folder from '../../../public/icons/folder.svg?component';
 
 export const Main = () => {
   const mainRef = useRef();
@@ -149,10 +150,8 @@ export const Main = () => {
                 </a>
               </h1>
               <p className='project-desc'>
-                A website intended for a Tailor company, tells a little about Renee's history,
-                explains about the service of the same, and shows offers for a limited time, in
-                addition to testimonials about customers who have been buying Renee's services for
-                over 10 years.
+                Games platform that shows information about the most popular free games on nowadays,
+                with 350+ different games. It has a filter tool by date of launch and platform.
               </p>
               <ul className='techs-used'>
                 <li>React</li>
@@ -186,10 +185,8 @@ export const Main = () => {
                 </a>
               </h1>
               <p className='project-desc'>
-                A website intended for a Tailor company, tells a little about Renee's history,
-                explains about the service of the same, and shows offers for a limited time, in
-                addition to testimonials about customers who have been buying Renee's services for
-                over 10 years.
+                A replica of the Netflix plataform, using the TMDB API to show the most recent
+                movies and series.
               </p>
               <ul className='techs-used'>
                 <li>React</li>
@@ -209,6 +206,75 @@ export const Main = () => {
             </div>
           </JobSampleComponent>
         </div>
+
+        <OtherProjects>
+          <h2>Other Noteworthy Projects</h2>
+
+          <div className='container'>
+            <a href='' style={{ textDecoration: 'none', color: 'var(--text)' }}>
+              <div className='item'>
+                <div className='icons-container'>
+                  <Folder />
+                  <External />
+                </div>
+                <div className='text-container'>
+                  <h3>Mimos da Patty</h3>
+                  <p>
+                    A website for a online stationery, who sells a lot of stuff, including
+                    personalized cakes and stylish gifts for any kind of party.
+                  </p>
+                  <ul>
+                    <li>React</li>
+                    <li>Fullpage.js</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+
+            <a href='' style={{ textDecoration: 'none', color: 'var(--text)' }}>
+              <div className='item'>
+                <div className='icons-container'>
+                  <Folder />
+                  <External />
+                </div>
+                <div className='text-container'>
+                  <h3>Delivery System</h3>
+                  <p>
+                    This is a system for an company that outsource motoboy services to companys that
+                    wants to delivery some product.
+                  </p>
+                  <ul>
+                    <li>React</li>
+                    <li>Context API</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+
+            <a href='' style={{ textDecoration: 'none', color: 'var(--text)' }}>
+              <div className='item'>
+                <div className='icons-container'>
+                  <Folder />
+                  <External />
+                </div>
+                <div className='text-container'>
+                  <h3>Pure ASCII Draw</h3>
+                  <p>
+                    Drawing a hourglass using vanilla javascript using only ASCII characters. And
+                    you can also choose the size of the hourglass where n = matrix.
+                  </p>
+                  <ul>
+                    <li>JavaScript</li>
+                    <li>ASCII</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div className='btn'>
+            <Button href={'https://github.com/mkyy'} content={'See more'} />
+          </div>
+        </OtherProjects>
 
         <div id='contact'>
           <h2 className='nav-contact'>03. What's Next?</h2>
