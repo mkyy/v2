@@ -288,7 +288,7 @@ export const Container = styled.main`
     }
 
     @media (max-width: 425px) {
-      height: 500px;
+      height: 550px;
       h1 {
         font-size: 40px;
         text-align: center;
