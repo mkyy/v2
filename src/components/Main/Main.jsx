@@ -14,11 +14,12 @@ export const Main = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      handleScroll();
+      handleScrollMenu();
+      handleScrollFadeIn();
     });
   }, [currentTop]);
 
-  const handleScroll = () => {
+  const handleScrollMenu = () => {
     const header = document.getElementById('header');
     const headerMobile = document.getElementById('header-mobile');
 
@@ -46,6 +47,19 @@ export const Main = () => {
     setCurrentTop(pageYoffset);
   };
 
+  const handleScrollFadeIn = () => {
+    const ElementsToFade = document.getElementsByClassName('fade-in');
+
+    Array.from(ElementsToFade).forEach(element => {
+      if (!element.classList.contains('fade-in-active')) {
+        const elementTop = element.getBoundingClientRect().top;
+        if (elementTop < window.innerHeight / 1.5) {
+          element.classList.add('fade-in-active');
+        }
+      }
+    });
+  };
+
   return (
     <>
       <Container id='content' ref={mainRef}>
@@ -63,7 +77,7 @@ export const Main = () => {
           <Button href={'#work'} content={'Check out my projects !'} />
         </div>
 
-        <div className='sheet' id='about'>
+        <div className='sheet fade-in' id='about'>
           <h2 className='nav-item nav-about'>About Me</h2>
           <div className='abt-div'>
             <div id='text-div-wrapper'>
@@ -97,7 +111,7 @@ export const Main = () => {
 
         <div className='sheet' id='work'>
           <h2 className='nav-item nav-work'>Some Things I've Built</h2>
-          <JobSampleComponent>
+          <JobSampleComponent className='fade-in'>
             <div className='image-container'>
               <a href='https://renee-trajar.vercel.app/' target={'blank'}>
                 <img src='renee.png' alt='' />
@@ -134,7 +148,7 @@ export const Main = () => {
             </div>
           </JobSampleComponent>
 
-          <JobSampleComponent>
+          <JobSampleComponent className='fade-in'>
             <div className='image-container'>
               <a href='https://freegames-db.vercel.app/' target={'blank'}>
                 <img src='freegdb.png' alt='' />
@@ -170,7 +184,7 @@ export const Main = () => {
             </div>
           </JobSampleComponent>
 
-          <JobSampleComponent>
+          <JobSampleComponent className='fade-in'>
             <div className='image-container'>
               <a href='https://mkyy.github.io/netflix-clone/' target={'blank'}>
                 <img src='netflix.png' alt='' />
@@ -208,9 +222,9 @@ export const Main = () => {
         </div>
 
         <OtherProjects>
-          <h2>Other Noteworthy Projects</h2>
+          <h2 className='fade-in'>Other Noteworthy Projects</h2>
 
-          <div className='container'>
+          <div className='container fade-in'>
             <a href='' style={{ textDecoration: 'none', color: 'var(--text)' }}>
               <div className='item'>
                 <div className='icons-container'>
@@ -276,7 +290,7 @@ export const Main = () => {
           </div>
         </OtherProjects>
 
-        <div id='contact'>
+        <div id='contact' className='fade-in'>
           <h2 className='nav-contact'>03. What's Next?</h2>
           <h1>Get In Touch</h1>
           <p>

@@ -140,5 +140,15 @@ export const GlobalStyle = createGlobalStyle`
     .blur{
         filter: blur(10px);
     }
+
+    .fade-in{
+        opacity: 0;
+        transform: translateY(20%);
+        transition: all .7s ease-out;
+    }
     
+    .fade-in-active{
+        opacity: 1;
+        transform: translateY(0);
+    }
 `;
