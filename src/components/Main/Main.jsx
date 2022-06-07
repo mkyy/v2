@@ -12,6 +12,8 @@ export const Main = () => {
   const mainRef = useRef();
   const [currentTop, setCurrentTop] = useState(93);
 
+  useEffect(() => handleScrollFadeIn(), []);
+
   useEffect(() => {
     window.addEventListener('scroll', () => {
       handleScrollMenu();
