@@ -15,9 +15,9 @@ const ContactForm = () => {
 
   return (
     <Container onSubmit={handleSubmit}>
-      <input id='name' type='text' name='name' placeholder='Name' />
+      <input id='name' type='text' name='name' placeholder='Name' required />
 
-      <input id='email' type='email' name='email' placeholder='example@email.com' />
+      <input id='email' type='email' name='email' placeholder='example@email.com' required />
 
       <textarea
         name='msg'
@@ -25,6 +25,7 @@ const ContactForm = () => {
         cols='30'
         rows='10'
         placeholder='Your friendly message here...'
+        required
       ></textarea>
       <div className='div-btn'>
         {state.submitting ? <PuffLoader color='#64FFDA' /> : <button type='submit'>Enviar</button>}
