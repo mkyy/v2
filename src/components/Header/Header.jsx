@@ -6,8 +6,9 @@ export const Header = () => {
   const mobileMenuRef = useRef();
   const mobileNavList = useRef();
 
+  useEffect(() => handleAnimation(), []);
+
   useEffect(() => {
-    window.addEventListener('load', () => handleAnimation());
     mobileMenuRef.current.addEventListener('click', () => handleClick());
   }, [mobileMenuRef]);
 

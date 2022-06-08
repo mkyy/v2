@@ -11,9 +11,13 @@ export const Container = styled.main`
     transform: translateY(10%);
     opacity: 0;
     transition: 1s ease;
+    min-height: 100vh;
+    width: 1000px;
+    margin-inline: auto;
 
     @media (max-width: 425px) {
       align-items: center;
+      width: 100%;
     }
   }
 
@@ -94,6 +98,8 @@ export const Container = styled.main`
   }
 
   .nav-about {
+    padding-top: 100px;
+
     &::before {
       content: '01.';
     }
@@ -101,10 +107,12 @@ export const Container = styled.main`
     @media (max-width: 425px) {
       font-size: 20px;
       text-align: center;
+      padding-top: 0;
     }
   }
 
   .nav-work {
+    padding-top: 100px;
     margin-bottom: 100px;
     width: 1000px;
     margin-inline: auto;
@@ -118,6 +126,7 @@ export const Container = styled.main`
     }
 
     @media (max-width: 425px) {
+      padding-top: 0;
       width: 100%;
       margin-bottom: 40px;
       font-size: 20px;
@@ -138,6 +147,9 @@ export const Container = styled.main`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 1440px;
+    margin-inline: auto;
+    margin-bottom: 100px;
 
     .abt-div {
       display: flex;
@@ -261,22 +273,32 @@ export const Container = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
-    max-height: 700px;
-    max-width: 1440px;
+    height: 120vh;
+    max-height: 750px;
+    max-width: 1000px;
     margin: 0 auto;
 
     h1 {
       color: var(--principal-text);
       font-size: 50px;
       margin-top: 0;
+
+      @media (max-width: 425px) {
+        margin-bottom: 5px;
+      }
     }
 
     p {
-      width: 50%;
-      line-height: 25px;
+      width: 80%;
+      line-height: 30px;
       text-align: center;
       margin-bottom: 50px;
+      margin-top: 0;
+
+      @media (max-width: 425px) {
+        line-height: 20px;
+        margin-bottom: 20px;
+      }
     }
 
     h6 {
@@ -287,8 +309,15 @@ export const Container = styled.main`
       font-size: 14px;
     }
 
+    .contact-wrapper {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
     @media (max-width: 425px) {
-      height: 550px;
+      height: 200vh;
+      max-height: 750px;
       h1 {
         font-size: 40px;
         text-align: center;
@@ -296,7 +325,7 @@ export const Container = styled.main`
 
       p {
         width: 100%;
-        text-align: left;
+        text-align: justify;
       }
     }
   }
@@ -486,6 +515,22 @@ export const OtherProjects = styled.section`
     text-align: center;
     color: var(--principal-text);
     margin-bottom: 50px;
+
+    &::after {
+      content: '';
+      width: 250px;
+      height: 1px;
+      background: var(--light);
+      position: absolute;
+      bottom: -15px;
+      left: 38%;
+    }
+    @media (max-width: 425px) {
+      &::after {
+        width: 150px;
+        left: 27%;
+      }
+    }
   }
 
   .container {

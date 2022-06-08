@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useRef, useState } from 'react';
 import { Button } from '../Button/';
+import ContactForm from '../ContactForm';
 import { Container, JobSampleComponent, OtherProjects } from './style';
 import Git from '../../../public/icons/git.svg?component';
 import Insta from '../../../public/icons/insta.svg?component';
@@ -65,7 +66,7 @@ export const Main = () => {
   return (
     <>
       <Container id='content' ref={mainRef}>
-        <div className='sheet animated' id='start'>
+        <div className='animated' id='start'>
           <div>
             <p className='sf'>Hi, my name is</p>
             <h1 className='title'>Maiky Roger.</h1>
@@ -79,7 +80,7 @@ export const Main = () => {
           <Button href={'#work'} content={'Check out my projects !'} />
         </div>
 
-        <div className='sheet fade-in' id='about'>
+        <div className='fade-in' id='about'>
           <h2 className='nav-item nav-about'>About Me</h2>
           <div className='abt-div'>
             <div id='text-div-wrapper'>
@@ -292,17 +293,18 @@ export const Main = () => {
           </div>
         </OtherProjects>
 
-        <div id='contact' className='fade-in'>
-          <h2 className='nav-contact'>03. What's Next?</h2>
-          <h1>Get In Touch</h1>
-          <p>
+        <div id='contact'>
+          <h2 className='nav-contact fade-in'>03. What's Next?</h2>
+          <h1 className='fade-in'>Get In Touch</h1>
+          <p className='fade-in'>
             I'm currently looking for my first opportunity of job as a front-end developer, which is
             the area I've focusing on recently. However I'm already doing freelances at 99freelas
             and Freelancer.com, so, if you're looking for a freelancer, don't hesitate to contact
             me.{' '}
           </p>
-
-          <Button href={'mailto:maikyrg9@gmail.com'} content={'Say Hello'} />
+          <div className='contact-wrapper fade-in'>
+            <ContactForm />
+          </div>
 
           <h6> © Built by Maiky Roger</h6>
         </div>

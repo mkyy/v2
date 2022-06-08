@@ -151,4 +151,13 @@ export const GlobalStyle = createGlobalStyle`
         opacity: 1;
         transform: translateY(0);
     }
+
+    .div-sucess{
+        background: #112240;
+        border-radius: 10px;
+        padding: 25px;
+        margin: auto;
+        margin-top: 100px;
+    }
+
 `;
