@@ -22,6 +22,10 @@ export const GlobalStyle = createGlobalStyle`
         color: var(--principal-text);
     }
 
+    html{
+        scroll-behavior: smooth;
+    }
+
     body{
         overflow-x: hidden;
         margin: 0;
