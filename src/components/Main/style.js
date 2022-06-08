@@ -98,7 +98,7 @@ export const Container = styled.main`
   }
 
   .nav-about {
-    padding-top: 100px;
+    padding-top: 50px;
 
     &::before {
       content: '01.';
@@ -112,7 +112,7 @@ export const Container = styled.main`
   }
 
   .nav-work {
-    padding-top: 100px;
+    padding-top: 50px;
     margin-bottom: 100px;
     width: 1000px;
     margin-inline: auto;
