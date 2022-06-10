@@ -61,7 +61,7 @@ export const Main = () => {
     Array.from(ElementsToFade).forEach(element => {
       if (!element.classList.contains('fade-in-active')) {
         const elementTop = element.getBoundingClientRect().top;
-        if (elementTop < window.innerHeight / 1.5) {
+        if (elementTop < window.innerHeight) {
           element.classList.add('fade-in-active');
         }
       }
@@ -104,11 +104,17 @@ export const Main = () => {
                 </a>{' '}
               </p>
               <p>Here are a few technologies I’ve been working with recently:</p>
-              <ul className='tech-skills'>
-                <li>JavaScript (ES6+)</li>
-                <li>TypeScript</li>
-                <li>React.js</li>
-              </ul>
+              <div className='lists'>
+                <ul className='tech-skills'>
+                  <li>JavaScript (ES6+)</li>
+                  <li>TypeScript</li>
+                  <li>React</li>
+                </ul>
+                <ul className='tech-skills'>
+                  <li>Next.js</li>
+                  <li>Gatsby</li>
+                </ul>
+              </div>
             </div>
             <div id='img-div-wrapper'>
               <img id='my-img' src='me.jpeg' alt='' />

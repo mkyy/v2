@@ -40,7 +40,6 @@ export const Container = styled.form`
       border: 1px solid var(--light);
       background-color: transparent;
       cursor: pointer;
-      transform: scale(1.02);
     }
   }
 

@@ -25,7 +25,8 @@ export const Container = styled.main`
     margin-bottom: 40px;
 
     @media (max-width: 728px) {
-      width: 90%;
+      width: 100%;
+      text-align: left;
     }
   }
 
@@ -38,8 +39,9 @@ export const Container = styled.main`
       font-size: 8vw;
     }
 
-    @media (min-width: 1800px) {
-      font-size: 2.5vw;
+    @media (max-width: 425px) {
+      margin: 30px 0;
+      font-size: 36px;
     }
   }
 
@@ -54,11 +56,20 @@ export const Container = styled.main`
     @media (min-width: 1800px) {
       font-size: 2vw;
     }
+
+    @media (max-width: 425px) {
+      font-size: 30px;
+      line-height: 32px;
+    }
   }
 
   #start .sf {
     font-family: 'Fira Code', monospace;
     color: var(--light);
+
+    @media (max-width: 425px) {
+      margin-bottom: 50px;
+    }
   }
 
   .fade-in-initial {
@@ -78,6 +89,9 @@ export const Container = styled.main`
 
   .nav-item {
     color: var(--principal-text);
+    position: relative;
+    width: fit-content;
+    padding-right: 10px;
 
     &::before {
       color: var(--light);
@@ -89,23 +103,21 @@ export const Container = styled.main`
     &::after {
       content: '';
       height: 1px;
-      width: 50%;
+      width: 30vw;
       display: block;
-      position: relative;
-      top: -15px;
-      left: 180px;
+      position: absolute;
+      bottom: 14.5px;
+      right: -30vw;
       background-color: #233554;
     }
 
     @media (max-width: 425px) {
-      &::after {
-        display: none;
-      }
+      text-align: left;
     }
   }
 
   .nav-about {
-    padding-top: 100px;
+    padding-top: 50px;
 
     &::before {
       content: '01.';
@@ -113,32 +125,38 @@ export const Container = styled.main`
 
     @media (max-width: 425px) {
       font-size: 20px;
-      text-align: center;
       padding-top: 0;
+
+      &::after {
+        right: -40vw;
+        width: 40vw;
+        bottom: 12px;
+      }
     }
   }
 
   .nav-work {
-    padding-top: 50px;
+    padding-top: 100px;
     margin-bottom: 100px;
-    width: 1000px;
-    margin-inline: auto;
     &::before {
       content: '02.';
     }
 
     &::after {
-      left: 370px;
-      width: 250px;
+      right: -30vw;
+      width: 30vw;
     }
 
     @media (max-width: 425px) {
       padding-top: 0;
-      width: 100%;
       margin-bottom: 40px;
       font-size: 20px;
-      text-align: center;
-      margin-top: 100px;
+
+      &::after {
+        width: 20px;
+        right: -20px;
+        bottom: 12px;
+      }
     }
   }
 
@@ -156,7 +174,6 @@ export const Container = styled.main`
     justify-content: center;
     max-width: 1440px;
     margin-inline: auto;
-    margin-bottom: 100px;
 
     .abt-div {
       display: flex;
@@ -178,8 +195,13 @@ export const Container = styled.main`
       #text-div-wrapper {
         width: 50%;
 
+        .lists {
+          display: flex;
+        }
+
         .tech-skills {
           list-style-type: none;
+          padding-left: 20px;
 
           li {
             margin-bottom: 10px;
@@ -198,6 +220,9 @@ export const Container = styled.main`
 
       p {
         line-height: 1.7;
+        @media (max-width: 425px) {
+          line-height: 1.3;
+        }
       }
 
       #img-div-wrapper {
@@ -248,31 +273,36 @@ export const Container = styled.main`
         }
 
         @media (max-width: 728px) {
-          margin-left: 0;
-          margin-bottom: 300px;
+          margin-inline: auto;
+          margin-bottom: 250px;
           margin-top: 20px;
           display: flex;
           justify-content: center;
 
           #color-div {
-            width: 250px;
-            height: 250px;
+            width: 200px;
+            height: 200px;
           }
           #border-div {
-            width: 250px;
-            height: 250px;
+            width: 200px;
+            height: 200px;
           }
           #my-img {
-            width: 250px;
-            height: 250px;
+            width: 200px;
+            height: 200px;
           }
         }
       }
+    }
+
+    @media (max-width: 425px) {
+      padding-left: 0;
     }
   }
 
   #work {
     position: relative;
+    max-width: 1000px;
   }
 
   #contact {
@@ -291,7 +321,7 @@ export const Container = styled.main`
       margin-top: 0;
 
       @media (max-width: 425px) {
-        margin-bottom: 5px;
+        margin-bottom: 15px;
       }
     }
 
@@ -564,6 +594,10 @@ export const OtherProjects = styled.section`
         color: var(--light);
       }
     }
+
+    @media (max-width: 425px) {
+      width: 100%;
+    }
   }
 
   .icons-container {
@@ -600,9 +634,13 @@ export const OtherProjects = styled.section`
     width: fit-content;
     margin-inline: auto;
     margin-top: 50px;
+    @media (max-width: 425px) {
+      margin-top: 20px;
+    }
   }
 
   @media (max-width: 425px) {
+    margin-bottom: 50px;
     h2 {
       margin-top: 50px;
       font-size: 20px;
