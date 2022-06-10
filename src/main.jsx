@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import { GlobalStyle } from './style/GlobalStyle/GlobalStyle';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <>
-    <GlobalStyle />
-    <App />
-  </>
-);
+setTimeout(() => {
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    <>
+      <GlobalStyle />
+      <App />
+    </>
+  );
+}, 2000);

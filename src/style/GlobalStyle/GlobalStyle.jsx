@@ -35,6 +35,14 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Calibre', sans-serif;
     }
 
+    .loading{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .sheet{
         min-height: 100vh;
         max-width: 1440px;

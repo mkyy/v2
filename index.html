@@ -11,7 +11,55 @@
     <title>Maiky Roger</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="loading">
+        <svg className="logo" width="100" height="100" viewBox="0 0 35 35">
+          <polygon
+            class="triangle"
+            fill="#0A192F"
+            stroke="#64FFDA"
+            strokeWidth="1"
+            points="16,1 32,32 1,32"
+          />
+          <text className="text" fontSize="{10}" x="{12}" y="{26}" fill="#64FFDA">M</text>
+        </svg>
+      </div>
+    </div>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #0a192f;
+      }
+      .loading {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: vanish 1s;
+        animation-delay: 2s;
+      }
+
+      .triangle {
+        stroke-dasharray: 17;
+        animation: dash 2s cubic-bezier(0.35, 0.04, 0.63, 0.95);
+      }
+
+      @keyframes dash {
+        to {
+          stroke-dashoffset: 136;
+        }
+      }
+
+      @keyframes vanish {
+        to {
+          scale: 0;
+        }
+      }
+    </style>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
