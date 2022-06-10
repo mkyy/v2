@@ -52,6 +52,11 @@ export const Main = () => {
 
   const handleScrollFadeIn = () => {
     const ElementsToFade = document.getElementsByClassName('fade-in');
+    const InitialElements = document.getElementsByClassName('fade-in-initial');
+
+    Array.from(InitialElements).forEach((element, index) => {
+      element.style.animation = `elementsfade 0.5s ease forwards ${index / 7 + 0.3}s`;
+    });
 
     Array.from(ElementsToFade).forEach(element => {
       if (!element.classList.contains('fade-in-active')) {
@@ -66,18 +71,19 @@ export const Main = () => {
   return (
     <>
       <Container id='content' ref={mainRef}>
-        <div className='animated' id='start'>
+        <div id='start'>
           <div>
-            <p className='sf'>Hi, my name is</p>
-            <h1 className='title'>Maiky Roger.</h1>
-            <h1 className='sub-title'>I build things for the web.</h1>
+            <p className='sf fade-in-initial'>Hi, my name is</p>
+            <h1 className='title fade-in-initial'>Maiky Roger.</h1>
+            <h1 className='sub-title fade-in-initial'>I build things for the web.</h1>
           </div>
-          <p className='half-screen'>
+          <p className='half-screen fade-in-initial'>
             I'm a web developer specializing in building exceptional digital experiences. Currently,
             I'm focused on front-end, building accessible and user experience focused products.
           </p>
-
-          <Button href={'#work'} content={'Check out my projects !'} />
+          <div className='fade-in-initial'>
+            <Button href={'#work'} content={'Check out my projects !'} c />
+          </div>
         </div>
 
         <div className='fade-in' id='about'>

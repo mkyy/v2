@@ -8,8 +8,6 @@ export const Container = styled.main`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transform: translateY(10%);
-    opacity: 0;
     transition: 1s ease;
     min-height: 100vh;
     width: 1000px;
@@ -24,7 +22,7 @@ export const Container = styled.main`
   #start .half-screen {
     width: 50%;
     line-height: 1.4;
-    margin-bottom: 8vh;
+    margin-bottom: 40px;
 
     @media (max-width: 728px) {
       width: 90%;
@@ -61,12 +59,21 @@ export const Container = styled.main`
   #start .sf {
     font-family: 'Fira Code', monospace;
     color: var(--light);
-    margin-top: 10vh;
   }
 
-  #start.started {
-    transform: translateY(0);
-    opacity: 1;
+  .fade-in-initial {
+    opacity: 0;
+  }
+
+  @keyframes elementsfade {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   .nav-item {
@@ -98,7 +105,7 @@ export const Container = styled.main`
   }
 
   .nav-about {
-    padding-top: 50px;
+    padding-top: 100px;
 
     &::before {
       content: '01.';
