@@ -54,16 +54,18 @@ export const Header = () => {
       <Wrapper className='header-original' id='header'>
         <Container>
           <svg className='logo' width='50' height='50' viewBox='0 0 35 35'>
-            <polygon
-              className='poly'
-              fill='#0A192F'
-              stroke='#64FFDA'
-              strokeWidth='1'
-              points='16,1 32,32 1,32'
-            />
-            <text className='text' fontSize={10} x={12} y={26} fill='#64FFDA'>
-              M
-            </text>
+            <a href='https://mkyy.vercel.app'>
+              <polygon
+                className='poly'
+                fill='#0A192F'
+                stroke='#64FFDA'
+                strokeWidth='1'
+                points='16,1 32,32 1,32'
+              />
+              <text className='text' fontSize={10} x={12} y={26} fill='#64FFDA'>
+                M
+              </text>
+            </a>
           </svg>
           <nav>
             <ol>
