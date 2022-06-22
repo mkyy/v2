@@ -84,7 +84,9 @@ export const GlobalStyle = createGlobalStyle`
 
         a {
         color: var(--light);
-
+        }
+        &::after{
+            transform: translateX(0);
         }
     }
 
@@ -172,6 +174,28 @@ export const GlobalStyle = createGlobalStyle`
         margin-top: 100px;
     }
 
+    .anchor {
+        text-decoration: none;
+        text-decoration-skip: 12px;
+
+        color: var(--light);
+        position: relative;
+        &::after {
+          content: '';
+          width: 0;
+          height: 1px;
+          background: var(--light);
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transition: 0.5s ease-out;
+        }
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
 
 
 `;

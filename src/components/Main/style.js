@@ -182,16 +182,6 @@ export const Container = styled.main`
         flex-direction: column;
       }
 
-      .anchor {
-        text-decoration: none;
-        color: var(--light);
-        position: relative;
-
-        &:hover {
-          border-bottom: 1px solid var(--light);
-        }
-      }
-
       #text-div-wrapper {
         width: 50%;
 

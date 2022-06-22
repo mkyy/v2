@@ -79,7 +79,11 @@ export const Main = () => {
           </div>
           <p className='half-screen fade-in-initial'>
             I'm a web developer specializing in building exceptional digital experiences. Currently,
-            I'm focused on front-end, building accessible and user experience focused products.
+            I'm focused on front-end, building accessible and user experience focused products. You
+            may be interested in{' '}
+            <a href='#contact' className='anchor'>
+              hiring me.
+            </a>
           </p>
           <div className='fade-in-initial'>
             <Button href={'#work'} content={'Check out my projects !'} c />
@@ -113,6 +117,7 @@ export const Main = () => {
                 <ul className='tech-skills'>
                   <li>Next.js</li>
                   <li>Gatsby</li>
+                  <li>Firebase</li>
                 </ul>
               </div>
             </div>
@@ -310,9 +315,11 @@ export const Main = () => {
           <h1 className='fade-in'>Get In Touch</h1>
           <p className='fade-in'>
             I'm currently looking for my first opportunity of job as a front-end developer, which is
-            the area I've focusing on recently. However I'm already doing freelances at 99freelas
-            and Freelancer.com, so, if you're looking for a freelancer, don't hesitate to contact
-            me.{' '}
+            the area I've focusing on recently. However I'm already doing freelances at{' '}
+            <a href='https://www.99freelas.com.br/user/maikyroger' className='anchor'>
+              99freelas
+            </a>
+            , so, if you're looking for a freelancer, don't hesitate to contact me.{' '}
           </p>
           <div className='contact-wrapper fade-in'>
             <ContactForm />
