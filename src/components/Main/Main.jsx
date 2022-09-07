@@ -133,35 +133,34 @@ export const Main = () => {
           <h2 className='nav-item nav-work'>Some Things I've Built</h2>
           <JobSampleComponent className='fade-in'>
             <div className='image-container'>
-              <a href='https://renee-trajar.vercel.app/' target={'blank'}>
-                <img src='renee.png' alt='' />
+              <a href='https://www.npmjs.com/package/@mkyy/mui-search-bar' target={'blank'}>
+                <img src='npm.png' alt='' />
                 <div className='bg-div'></div>
               </a>
             </div>
             <div className='description-container'>
               <p className='featured-project'>Featured Project</p>
               <h1 className='project-title'>
-                <a href='https://renee-trajar.vercel.app/' target={'blank'}>
+                <a href='https://www.npmjs.com/package/@mkyy/mui-search-bar' target={'blank'}>
                   {' '}
-                  Renee Trajar
+                  MUI Search Bar
                 </a>
               </h1>
               <p className='project-desc'>
-                A website intended for a Tailor company, tells a little about Renee's history,
-                explains about the service of the same, and shows offers for a limited time, in
-                addition to testimonials about customers who have been buying Renee's services for
-                over 10 years.
+                A Search Bar component intended for projects using Material-UI v5+, a fully
+                styleable controlled input with a variety of props.
               </p>
               <ul className='techs-used'>
                 <li>React</li>
-                <li>Styled Components</li>
-                <li>Vercel</li>
+                <li>Material-UI v5</li>
+                <li>Vite</li>
+                <li>Rollup.js</li>
               </ul>
               <div className='buttons'>
-                <a href='https://github.com/mkyy/renee-trajar' target={'blank'}>
+                <a href='https://github.com/mkyy/mui-search-bar' target={'blank'}>
                   <Git />
                 </a>
-                <a href='https://renee-trajar.vercel.app/' target={'blank'}>
+                <a href='https://www.npmjs.com/package/@mkyy/mui-search-bar' target={'blank'}>
                   <External />
                 </a>
               </div>
@@ -245,7 +244,10 @@ export const Main = () => {
           <h2 className='fade-in'>Other Noteworthy Projects</h2>
 
           <div className='container fade-in'>
-            <a href='' style={{ textDecoration: 'none', color: 'var(--text)' }}>
+            <a
+              href='https://mimos-da-patty.vercel.app/'
+              style={{ textDecoration: 'none', color: 'var(--text)' }}
+            >
               <div className='item'>
                 <div className='icons-container'>
                   <Folder />
@@ -265,27 +267,34 @@ export const Main = () => {
               </div>
             </a>
 
-            <a href='' style={{ textDecoration: 'none', color: 'var(--text)' }}>
+            <a
+              href='https://renee-trajar.vercel.app/'
+              style={{ textDecoration: 'none', color: 'var(--text)' }}
+            >
               <div className='item'>
                 <div className='icons-container'>
                   <Folder />
                   <External />
                 </div>
                 <div className='text-container'>
-                  <h3>Delivery System</h3>
+                  <h3>Reneee Trajar</h3>
                   <p>
-                    This is a system for an company that outsource motoboy services to companys that
-                    wants to delivery some product.
+                    A website intended for a Tailor company, tells a little about Renee's history,
+                    explains about the service of the same, and shows offers for a limited time.
                   </p>
                   <ul>
                     <li>React</li>
-                    <li>Context API</li>
+                    <li>Styled Components</li>
+                    <li>Vercel</li>
                   </ul>
                 </div>
               </div>
             </a>
 
-            <a href='' style={{ textDecoration: 'none', color: 'var(--text)' }}>
+            <a
+              href='https://github.com/mkyy/hourglass'
+              style={{ textDecoration: 'none', color: 'var(--text)' }}
+            >
               <div className='item'>
                 <div className='icons-container'>
                   <Folder />
