@@ -349,7 +349,7 @@ export const Main = () => {
             </a>
           </li>
           <li>
-            <a target={'blank'} href='https://instagram.com/deoklin'>
+            <a target={'blank'} href='https://instagram.com/dev.maiky'>
               <Insta />
             </a>
           </li>
