@@ -101,8 +101,9 @@ export const Main = () => {
                 and from that day on I knew which career to follow on.
               </p>
               <p>
-                I'm looking out for my first job, to be part of some team, and also in meanwhile I
-                do freelances, I've some tangible projects where my skills are put to the test.{' '}
+                Nowadays I'm currently working in a full-time job, but I also do side-jobs as a
+                freelancer, so, if you have a project and need a front-end, don't hesitate to
+                contact me.
                 <a className='anchor' href='#work'>
                   See more.
                 </a>{' '}
@@ -205,34 +206,30 @@ export const Main = () => {
 
           <JobSampleComponent className='fade-in'>
             <div className='image-container'>
-              <a href='https://mkyy.github.io/netflix-clone/' target={'blank'}>
-                <img src='netflix.png' alt='' />
+              <a href='https://www.clubemotopecaseoficina.com.br/' target={'blank'}>
+                <img src='clube.png' alt='' />
                 <div className='bg-div'></div>
               </a>
             </div>
             <div className='description-container'>
               <p className='featured-project'>Featured Project</p>
               <h1 className='project-title'>
-                <a href='https://mkyy.github.io/netflix-clone/' target={'blank'}>
-                  Netflix Clone
+                <a href='https://www.clubemotopecaseoficina.com.br/' target={'blank'}>
+                  Motopeças e Oficina Clube Motoboy
                 </a>
               </h1>
               <p className='project-desc'>
-                A replica of the Netflix plataform, using the TMDB API to show the most recent
-                movies and series.
+                The biggest e-commerce of motorcycle parts in Belo Horizonte, where you're also able
+                to schedule an inspection to your motorcycle.
               </p>
               <ul className='techs-used'>
                 <li>React</li>
-                <li>jQuery</li>
-                <li>Styled Components</li>
-                <li>TMDB API</li>
+                <li>Next.js</li>
+                <li>Material-UI v5</li>
                 <li>Vercel</li>
               </ul>
               <div className='buttons'>
-                <a href='https://github.com/mkyy/netflix-clone' target={'blank'}>
-                  <Git />
-                </a>
-                <a href='https://mkyy.github.io/netflix-clone/' target={'blank'}>
+                <a href='https://www.clubemotopecaseoficina.com.br/' target={'blank'}>
                   <External />
                 </a>
               </div>
@@ -323,12 +320,13 @@ export const Main = () => {
           <h2 className='nav-contact fade-in'>03. What's Next?</h2>
           <h1 className='fade-in'>Get In Touch</h1>
           <p className='fade-in'>
-            I'm currently looking for my first opportunity of job as a front-end developer, which is
-            the area I've focusing on recently. However I'm already doing freelances at{' '}
+            I'm not looking for full-time jobs or CLT right now, but I have 20h/week open in
+            schedule to work, if my works here didn't convice you that I am the best guy for you
+            job, take a look at my{' '}
             <a href='https://www.99freelas.com.br/user/maikyroger' className='anchor'>
-              99freelas
+              99freelas profile
             </a>
-            , so, if you're looking for a freelancer, don't hesitate to contact me.{' '}
+            , need a freelancer or a part-time front-end developer? Get in touch.{' '}
           </p>
           <div className='contact-wrapper fade-in'>
             <ContactForm />
