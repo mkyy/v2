@@ -79,7 +79,7 @@ export const Main = () => {
           </div>
           <p className='half-screen fade-in-initial'>
             I'm a web developer specializing in building exceptional digital experiences. Currently,
-            I'm focused on front-end, building accessible and user experience focused products. You
+            I'm working full-stack, building accessible and user experience focused products. You
             may be interested in{' '}
             <a href='#contact' className='anchor'>
               hiring me.
@@ -101,9 +101,9 @@ export const Main = () => {
                 and from that day on I knew which career to follow on.
               </p>
               <p>
-                Nowadays I'm currently working in a full-time job, but I also do side-jobs as a
-                freelancer, so, if you have a project and need a front-end, don't hesitate to
-                contact me.
+                Nowadays I'm working in a full-time job, but I'm open to part-time jobs and
+                freelances, so, if you have a project and need a fullstack developer, don't hesitate
+                to contact me.
                 <a className='anchor' href='#work'>
                   See more.
                 </a>{' '}
@@ -116,8 +116,8 @@ export const Main = () => {
                   <li>React</li>
                 </ul>
                 <ul className='tech-skills'>
-                  <li>Next.js</li>
-                  <li>Gatsby</li>
+                  <li>React Native</li>
+                  <li>Node.js</li>
                   <li>Firebase</li>
                 </ul>
               </div>
@@ -132,6 +132,46 @@ export const Main = () => {
 
         <div className='sheet' id='work'>
           <h2 className='nav-item nav-work'>Some Things I've Built</h2>
+
+          <JobSampleComponent className='fade-in'>
+            <div className='image-container'>
+              <a href='https://github.com/mkyy/Moovy' target={'blank'}>
+                <img src='moovy.png' alt='' />
+                <div className='bg-div'></div>
+              </a>
+            </div>
+            <div className='description-container'>
+              <p className='featured-project'>Featured Project</p>
+              <h1 className='project-title'>
+                <a href='https://github.com/mkyy/Moovy' target={'blank'}>
+                  Moovy
+                </a>
+              </h1>
+              <p className='project-desc'>
+                Moovy is a mobile and web app where a movie enthusiast can search for his favorite
+                movies and record audio reviews. The user can manage a list called “My Library”
+                where he/she can save his previously watched movies. After saving them in the
+                library, the user can upload an audio file review for that movie.
+              </p>
+              <ul className='techs-used'>
+                <li>React</li>
+                <li>Material-UI v5</li>
+                <li>Nest.js</li>
+                <li>PostgreSQL</li>
+                <li>React Native</li>
+                <li>AWS</li>
+              </ul>
+              <div className='buttons'>
+                <a href='https://github.com/mkyy/Moovy' target={'blank'}>
+                  <Git />
+                </a>
+                <a href='http://moovy-client.s3-website-sa-east-1.amazonaws.com/' target={'blank'}>
+                  <External />
+                </a>
+              </div>
+            </div>
+          </JobSampleComponent>
+
           <JobSampleComponent className='fade-in'>
             <div className='image-container'>
               <a href='https://www.npmjs.com/package/@mkyy/mui-search-bar' target={'blank'}>
@@ -198,38 +238,6 @@ export const Main = () => {
                   <Git />
                 </a>
                 <a href='https://freegames-db.vercel.app/' target={'blank'}>
-                  <External />
-                </a>
-              </div>
-            </div>
-          </JobSampleComponent>
-
-          <JobSampleComponent className='fade-in'>
-            <div className='image-container'>
-              <a href='https://www.clubemotopecaseoficina.com.br/' target={'blank'}>
-                <img src='clube.png' alt='' />
-                <div className='bg-div'></div>
-              </a>
-            </div>
-            <div className='description-container'>
-              <p className='featured-project'>Featured Project</p>
-              <h1 className='project-title'>
-                <a href='https://www.clubemotopecaseoficina.com.br/' target={'blank'}>
-                  Motopeças e Oficina Clube Motoboy
-                </a>
-              </h1>
-              <p className='project-desc'>
-                The biggest e-commerce of motorcycle parts in Belo Horizonte, where you're also able
-                to schedule an inspection to your motorcycle.
-              </p>
-              <ul className='techs-used'>
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Material-UI v5</li>
-                <li>Vercel</li>
-              </ul>
-              <div className='buttons'>
-                <a href='https://www.clubemotopecaseoficina.com.br/' target={'blank'}>
                   <External />
                 </a>
               </div>
@@ -320,13 +328,12 @@ export const Main = () => {
           <h2 className='nav-contact fade-in'>03. What's Next?</h2>
           <h1 className='fade-in'>Get In Touch</h1>
           <p className='fade-in'>
-            I'm not looking for full-time jobs or CLT right now, but I have 20h/week open in
-            schedule to work, if my works here didn't convice you that I am the best guy for you
-            job, take a look at my{' '}
+            I'm working on a full-time job now, but I have 20h/week open in schedule to work, if my
+            works here didn't convice you that I am the best guy for you job, take a look at my{' '}
             <a href='https://www.99freelas.com.br/user/maikyroger' className='anchor'>
               99freelas profile
             </a>
-            , need a freelancer or a part-time front-end developer? Get in touch.{' '}
+            , need a freelancer or a part-time software developer? Get in touch.{' '}
           </p>
           <div className='contact-wrapper fade-in'>
             <ContactForm />
