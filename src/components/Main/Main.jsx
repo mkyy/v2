@@ -113,10 +113,10 @@ export const Main = () => {
                 <ul className='tech-skills'>
                   <li>JavaScript (ES6+)</li>
                   <li>TypeScript</li>
-                  <li>React</li>
+                  <li>React & React Native</li>
                 </ul>
                 <ul className='tech-skills'>
-                  <li>React Native</li>
+                  <li>Wordpress</li>
                   <li>Node.js</li>
                   <li>Firebase</li>
                 </ul>
